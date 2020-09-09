@@ -6,7 +6,7 @@
       
       <div class="section"> 
         <div class="container">
-          <div class="box" v-for="animal in animals" :key="animal.id">
+          <div class="box" v-for="animal in getAnimals" :key="animal.id">
             <div class="content">
               <img alt="image" :src="animal.src" />
               <p>{{ animal.name }}</p>
@@ -22,68 +22,69 @@
                   >{{animal.id}}
                   </vs-button>
                </router-link>
-
-                <!-- <vs-button			
-                
-                  @click="popupActivo4 = true"
-                  color="danger" 
-                  type="border"
-                  
-                  >
-                  <p class="tt"> {{animal.id}} </p>
-
-                  </vs-button
-                >
-                <vs-popup
-                  fullscreen
-                  title="fullscreen"
-                  :active.sync="popupActivo4"
-                >
-                <div v-if="animal.id" 
-                
-                >                      
-                   {{ animal }} 
-                   </div> -->
-                <!-- </vs-popup> -->
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <div class="section">
-        <div class="container2">
-          <div class="box" v-for="animal in animals2" :key="animal.name">
+     <div class="section"> 
+        <!-- <div class="container2">
+          <div class="box" v-for="terran in getTerran" :key="terran.id">
             <div class="content">
-              <!-- <img alt="image" src="../assets/hamster.png"> -->
-              <img alt="image" :src="animal.src" />
-              <p>{{ animal.name }}</p>
+              <img alt="image" :src="terran.src" />
+              <p>{{ terran.name }}</p>
+
+              <div class="centerx"> 
+                <router-link to="/terran">
+                  <vs-button			
+                  title="View Details!" 
+                  @click="setCurrentTerran(terran)"
+                  color="danger" 
+                  type="border"
+                  
+                  >{{terran.id}}
+                  </vs-button>
+               </router-link>
+              </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
-      <div class="section">
-        <div class="container3">
-          <div class="box" v-for="animal in animals3" :key="animal.name">
+          <div class="section"> 
+        <!-- <div class="container3">
+          <div class="box" v-for="aqua in getAqua" :key="aqua.id">
             <div class="content">
-              <!-- <img alt="image" src="../assets/hamster.png"> -->
-              <img alt="image" :src="animal.src" />
-              <p>{{ animal.name }}</p>
+              <img alt="image" :src="aqua.src" />
+              <p>{{ aqua.name }}</p>
+
+              <div class="centerx"> 
+                <router-link to="/aqua">
+                  <vs-button			
+                  title="View Details!" 
+                  @click="setCurrentAqua(aqua)"
+                  color="danger" 
+                  type="border"
+                  
+                  >{{aqua.id}}
+                  </vs-button>
+               </router-link>
+              </div>
             </div>
           </div>
-        </div>
+        </div> -->
       </div>
     </full-page>
   </div>
 </template>
 <script>
+
+
 import { mapGetters, mapActions } from "vuex";
 import FullPage from "vue-fullpage.js";
-import HelloWorld from '@/components/HelloWorld.vue'
 export default {
   name: 'home',
   components: {
-    HelloWorld,
     FullPage
   },
   data() {
@@ -111,10 +112,50 @@ export default {
       }
       return require(`../assets/${picturepath}`);
     },
-    setAnimal(c) {
+    setCurrentAnimal(c) {
       this.setCurrent(c);
     }
   },
+  // Kafshet toksore
+  // computed: {
+  //   ...mapGetters(["getTerran"]),
+  // },
+  // mounted() {
+
+  // },
+  // methods: {
+  //   ...mapActions(["setCurrent"]),
+
+  //   getPath(picturepath) {
+  //     if (picturepath == null) {
+  //       return;
+  //     }
+  //     return require(`../assets/${picturepath}`);
+  //   },
+  //   setCurrentTerran(t) {
+  //     this.setCurrent(t);
+  //   }
+  // },
+  // // Kafshet Ujore
+  // computed: {
+  //   ...mapGetters(["getAqua"]),
+  // },
+  // mounted() {
+
+  // },
+  // methods: {
+  //   ...mapActions(["setCurrent"]),
+
+  //   getPath(picturepath) {
+  //     if (picturepath == null) {
+  //       return;
+  //     }
+  //     return require(`../assets/${picturepath}`);
+  //   },
+  //   setCurrentAqua(a) {
+  //     this.setCurrent(a);
+  //   }
+  // },
 
 
 destroyed() {

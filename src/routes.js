@@ -1,7 +1,7 @@
 
-import Home from './views/Home.vue'
-import About from './views/About.vue'
-import Animal from './views/Animal.vue'
+import Home from './components/Home.vue'
+import About from './components/About.vue'
+import Animal from './components/Animal.vue'
 
 
 export const routes = [
