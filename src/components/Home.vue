@@ -13,14 +13,14 @@
 
               <div class="centerx"> 
                 <router-link to="/animal">
-                  <vs-button			
+                  <button class="butoon"
                   title="View Details!" 
                   @click="setCurrentAnimal(animal)"
                   color="danger" 
                   type="border"
                   
-                  >{{animal.id}}
-                  </vs-button>
+                  >Details
+                  </button>
                </router-link>
               </div>
             </div>
