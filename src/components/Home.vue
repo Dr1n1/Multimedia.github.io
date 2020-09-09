@@ -6,9 +6,10 @@
       
       <div class="section"> 
         <div class="container">
-          <div class="box" v-for="animal in getAnimals" :key="animal.id">
+          <div class="box" v-for="animal in getAnimals" :key="animal.id"  v-if="animal.id <= 8">
             <div class="content">
-              <img alt="image" :src="animal.src" />
+              <img alt="image" :src="getPath(animal.image1)" />
+
               <p>{{ animal.name }}</p>
 
               <div class="centerx"> 
@@ -29,50 +30,52 @@
       </div>
 
      <div class="section"> 
-        <!-- <div class="container2">
-          <div class="box" v-for="terran in getTerran" :key="terran.id">
+        <div class="container2">
+          <div class="box" v-for="animal in getAnimals" :key="animal.id"  v-if="animal.id < 16 && animal.id > 8">
             <div class="content">
-              <img alt="image" :src="terran.src" />
-              <p>{{ terran.name }}</p>
+              <img alt="image" :src="getPath(animal.image1)" />
+
+              <p>{{ animal.name }}</p>
 
               <div class="centerx"> 
-                <router-link to="/terran">
-                  <vs-button			
+                <router-link to="/animal">
+                  <button class="butoon"
                   title="View Details!" 
-                  @click="setCurrentTerran(terran)"
+                  @click="setCurrentAnimal(animal)"
                   color="danger" 
                   type="border"
                   
-                  >{{terran.id}}
-                  </vs-button>
+                  >Details
+                  </button>
                </router-link>
               </div>
             </div>
           </div>
-        </div> -->
+          </div>
       </div>
           <div class="section"> 
-        <!-- <div class="container3">
-          <div class="box" v-for="aqua in getAqua" :key="aqua.id">
+        <div class="container3">
+          <div class="box" v-for="animal in getAnimals" :key="animal.id" v-if="animal.id > 16">
             <div class="content">
-              <img alt="image" :src="aqua.src" />
-              <p>{{ aqua.name }}</p>
+              <img alt="image" :src="getPath(animal.image1)" />
+
+              <p>{{ animal.name }}</p>
 
               <div class="centerx"> 
-                <router-link to="/aqua">
-                  <vs-button			
+                <router-link to="/animal">
+                  <button class="butoon"
                   title="View Details!" 
-                  @click="setCurrentAqua(aqua)"
+                  @click="setCurrentAnimal(animal)"
                   color="danger" 
                   type="border"
                   
-                  >{{aqua.id}}
-                  </vs-button>
+                  >Details
+                  </button>
                </router-link>
               </div>
             </div>
           </div>
-        </div> -->
+        </div>
       </div>
     </full-page>
   </div>
@@ -116,46 +119,7 @@ export default {
       this.setCurrent(c);
     }
   },
-  // Kafshet toksore
-  // computed: {
-  //   ...mapGetters(["getTerran"]),
-  // },
-  // mounted() {
-
-  // },
-  // methods: {
-  //   ...mapActions(["setCurrent"]),
-
-  //   getPath(picturepath) {
-  //     if (picturepath == null) {
-  //       return;
-  //     }
-  //     return require(`../assets/${picturepath}`);
-  //   },
-  //   setCurrentTerran(t) {
-  //     this.setCurrent(t);
-  //   }
-  // },
-  // // Kafshet Ujore
-  // computed: {
-  //   ...mapGetters(["getAqua"]),
-  // },
-  // mounted() {
-
-  // },
-  // methods: {
-  //   ...mapActions(["setCurrent"]),
-
-  //   getPath(picturepath) {
-  //     if (picturepath == null) {
-  //       return;
-  //     }
-  //     return require(`../assets/${picturepath}`);
-  //   },
-  //   setCurrentAqua(a) {
-  //     this.setCurrent(a);
-  //   }
-  // },
+  
 
 
 destroyed() {
@@ -226,7 +190,7 @@ body {
 }
 
 .container .box:nth-child(1) {
-  grid-column: span 1;
+  grid-column: span 2;
   grid-row: span 1;
 }
 .container .box:nth-child(2) {
