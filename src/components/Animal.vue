@@ -6,7 +6,7 @@
       <div class="details">
         <h3>Name: {{getCurrentAnimal.name}}</h3>
         <h3>Description: {{getCurrentAnimal.description}}</h3>
-        <h3>Horse Power: {{getCurrentAnimal.foto}}</h3>
+        <h3>Animal: {{getCurrentAnimal.foto}}</h3>
       </div>
       </div>
 </template>
@@ -18,13 +18,10 @@ import {mapGetters} from 'vuex'
 export default {
     data(){
         return {
-          sound: {},
           isPlaying: false,
         }
     },
-    mounted(){
-      this.sound = document.getElementById("audio")
-    },
+
     computed:{
         ...mapGetters(['getCurrentAnimal']),
     },

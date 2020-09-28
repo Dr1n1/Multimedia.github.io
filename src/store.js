@@ -8,10 +8,11 @@ export default new Vuex.Store({
   state: {
     currentAnimal: {},
     animals: [
+      // Kafshet ne aijr 
       {
         id: "1",
-        name: "Brejtes",
-        image1: 'hamster.png',
+        name: "Albatross",
+        image1: 'collar.png',
         description: "test3",
         foto: 'hamster.png',
         video: 'hamster.png',
@@ -20,7 +21,7 @@ export default new Vuex.Store({
 
       {
         id: "2",
-        name: "Majmun",
+        name: "Bald Eagle",
         image1: 'hamster.png',
         description: "test2",
         foto: 'hamster.png',
@@ -29,7 +30,7 @@ export default new Vuex.Store({
       },
       {
         id: "3",
-        name: "Fatkue",
+        name: "Owl",
         image1: 'hamster.png',
         description: "test4",
         foto: 'hamster.png',
@@ -38,7 +39,16 @@ export default new Vuex.Store({
       },
       {
         id: "4",
-        name: "Brejtes",
+        name: "Flamingo",
+        image1: 'hamster.png',
+        description: "test4",
+        foto: 'hamster.png',
+        video: 'hamster.png',
+        gif: 'hamster.png',
+      },
+      {
+        id: "5",
+        name: "Parrot",
         image1: 'hamster.png',
         description: "test5",
         foto: 'hamster.png',
@@ -46,8 +56,8 @@ export default new Vuex.Store({
         gif: 'hamster.png',
       },
       {
-        id: "5",
-        name: "Brejtes",
+        id: "6",
+        name: "Pelican",
         image1: 'hamster.png',
         description: "test6",
         foto: 'hamster.png',
@@ -55,8 +65,8 @@ export default new Vuex.Store({
         gif: 'hamster.png',
       },
       {
-        id: "6",
-        name: "Brejtes",
+        id: "7",
+        name: "Peacock",
         image1: 'hamster.png',
         description: "test7",
         foto: 'hamster.png',
@@ -64,26 +74,18 @@ export default new Vuex.Store({
         gif: 'hamster.png',
       },
       {
-        id: "7",
-        name: "Brejtes",
+        id: "8",
+        name: "Sparrow",
         image1: 'hamster.png',
         description: "test8",
         foto: 'hamster.png',
         video: 'hamster.png',
         gif: 'hamster.png',
-      },
+      },     
       {
-        id: "8",
-        name: "Brejtes",
-        image1: 'hamster.png',
-        description: "test9",
-        foto: 'hamster.png',
-        video: 'hamster.png',
-        gif: 'hamster.png',
-      },
-      {
+        // Kafshet ne toke
         id: "9",
-        name: "Brejtes",
+        name: "Anakonda",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -101,7 +103,7 @@ export default new Vuex.Store({
       },
       {
         id: "11",
-        name: "Brejtes",
+        name: "Elephant",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -110,7 +112,7 @@ export default new Vuex.Store({
       },
       {
         id: "13",
-        name: "Brejtes",
+        name: "Lion",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -119,7 +121,7 @@ export default new Vuex.Store({
       },
       {
         id: "14",
-        name: "Brejtes",
+        name: "Squirrel",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -128,16 +130,17 @@ export default new Vuex.Store({
       },
       {
         id: "15",
-        name: "Brejtes",
+        name: "Hedgehog",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
         video: 'hamster.png',
         gif: 'hamster.png',
       },
+      // Kafshet ne Uje
       {
         id: "16",
-        name: "Brejtes",
+        name: "Crab",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -146,7 +149,7 @@ export default new Vuex.Store({
       },
       {
         id: "17",
-        name: "Brejtes",
+        name: "Dolphin",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -155,7 +158,7 @@ export default new Vuex.Store({
       },
       {
         id: "18",
-        name: "Brejtes",
+        name: "Lobster",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -164,7 +167,7 @@ export default new Vuex.Store({
       },
       {
         id: "19",
-        name: "Brejtes",
+        name: "Seahorse",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -173,7 +176,7 @@ export default new Vuex.Store({
       },
       {
         id: "20",
-        name: "Brejtes",
+        name: "Squid",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -182,7 +185,7 @@ export default new Vuex.Store({
       },
       {
         id: "21",
-        name: "Brejtes",
+        name: "Seal",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -191,7 +194,7 @@ export default new Vuex.Store({
       },
       {
         id: "22",
-        name: "Brejtes",
+        name: "Walrus",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
@@ -200,7 +203,7 @@ export default new Vuex.Store({
       },
       {
         id: "23",
-        name: "Brejtes",
+        name: "Whale",
         image1: 'hamster.png',
         description: "test9",
         foto: 'hamster.png',
