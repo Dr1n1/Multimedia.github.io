@@ -205,12 +205,12 @@ body {
 
 .container .box:nth-child(6) {
     grid-column: span 1;
-    grid-row: span 1;
+    grid-row: span 2;
 }
 
 .container .box:nth-child(7) {
     grid-column: span 1;
-    grid-row: span 1;
+    grid-row: span 2;
 }
 
 .container .box:nth-child(8) {
@@ -230,32 +230,32 @@ body {
 }
 
 .container2 .box:nth-child(1) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
 }
 
 .container2 .box:nth-child(2) {
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 1;
 }
 
 .container2 .box:nth-child(3) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
 }
 
 .container2 .box:nth-child(4) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 2;
 }
 
 .container2 .box:nth-child(5) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
 }
 
 .container2 .box:nth-child(6) {
-    grid-column: span 3;
+    grid-column: span 2;
     grid-row: span 1;
 }
 
@@ -270,32 +270,32 @@ body {
 }
 
 .container3 .box:nth-child(1) {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.container3 .box:nth-child(2) {
     grid-column: span 1;
     grid-row: span 2;
 }
 
+.container3 .box:nth-child(2) {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
 .container3 .box:nth-child(3) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
 }
 
 .container3 .box:nth-child(4) {
     grid-column: span 1;
-    grid-row: span 2;
+    grid-row: span 1;
 }
 
 .container3 .box:nth-child(5) {
-    grid-column: span 2;
-    grid-row: span 2;
+    grid-column: span 1;
+    grid-row: span 1;
 }
 
 .container3 .box:nth-child(6) {
-    grid-column: span 2;
+    grid-column: span 1;
     grid-row: span 1;
 }
 
